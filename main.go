@@ -15,7 +15,7 @@ func main() {
 	}
 	dataR, err := os.ReadFile("data.txt")
 	if err != nil {
-		fmt.Println("the file is ")
+		fmt.Println(err)
 		log.Fatal()
 	}
 	functions.Calcul(string(dataR))
