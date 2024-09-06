@@ -16,13 +16,13 @@ func Average(tab []float64) float64 {
 // Median function
 
 func Median(tab []float64) float64 {
-	var mediam float64
+	var median float64
 	if len(tab)%2 == 0 {
-		mediam = (tab[(len(tab)/2)-1] + tab[len(tab)/2]) / 2
+		median = (tab[(len(tab)/2)-1] + tab[len(tab)/2]) / 2
 	} else {
-		mediam = tab[len(tab)/2]
+		median = tab[len(tab)/2]
 	}
-	return mediam
+	return median
 }
 
 // Variance function
