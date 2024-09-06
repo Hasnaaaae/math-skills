@@ -18,7 +18,6 @@ func Calcul(s string) {
 		temp, err := strconv.Atoi(r)
 		if err != nil {
 			fmt.Println(err)
-			fmt.Println("hello")
 		}
 		data = append(data, float64(temp))
 		temp = 0
@@ -27,6 +26,6 @@ func Calcul(s string) {
 
 	fmt.Println("Average:", math.Round(Average(data)))
 	fmt.Println("Median:", math.Round(Median(data)))
-	fmt.Println("Variance:", math.Round(Variance(data, Average(data))))
+	fmt.Printf("Variance: %.0f \n", math.Round(Variance(data, Average(data))))
 	fmt.Println("Standard Deviation:", math.Round(Standard_Deviation(Variance(data, Average(data)))))
 }
