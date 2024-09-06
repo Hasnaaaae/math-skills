@@ -28,10 +28,9 @@ func Median(tab []float64) float64 {
 // Variance function
 
 func Variance(tab []float64, average float64) float64 {
-	var variance, temp float64
+	var variance float64
 	for i := 0; i < len(tab); i++ {
-		temp = math.Pow(tab[i]-average, 2)
-		variance += temp
+		variance += math.Pow(tab[i]-average, 2)
 	}
 	variance = variance / float64(len(tab))
 	return variance
@@ -40,7 +39,6 @@ func Variance(tab []float64, average float64) float64 {
 // Standard_Deviation function
 
 func Standard_Deviation(variance float64) float64 {
-	var sd float64  = 0.0 
-	sd = math.Sqrt(float64(variance))
+	sd := math.Sqrt(variance)
 	return sd
 }
